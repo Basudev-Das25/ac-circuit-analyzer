@@ -25,7 +25,7 @@ export default function ControlPanel({
                     <input
                         type="range"
                         min="1"
-                        max="200"
+                        max="1000"
                         value={resistance}
                         onChange={(e) => setResistance(+e.target.value)}
                     />
