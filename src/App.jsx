@@ -76,6 +76,9 @@ function App() {
     <>
     <div className="App">
       <h1>AC Circuit Analyzer</h1>
+      <p className='subtitle'>
+        Interactive AC RLC Circuit Simulator
+      </p>
 
       <div className='card'>
         <ControlPanel
@@ -91,8 +94,8 @@ function App() {
       <div className='card'>
         <WaveCanvas omega={omega} phase={phase} />
         <div className='legend'>
-          <span style={{color: 'blue'}}> ● Voltage</span><br/>
-          <span style={{color: 'red'}}> ● Current</span>
+          <span style={{color: '#38bdf8'}}> ● Voltage</span><br/>
+          <span style={{color: '#f87171'}}> ● Current</span>
         </div>
         <p className={`phase-text ${phaseInfo.type}`}>
           {phaseInfo.text}
